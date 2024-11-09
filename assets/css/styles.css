@@ -43,7 +43,7 @@ a {
 
 h2 {
     font-size: 2rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.8rem;
     color: #333;
 }
 
@@ -126,7 +126,7 @@ p {
 
 .popular {
     background-color: #121826;
-    border-bottom: 0px;
+    border-color: #121826;
     color: #fff;
     font-weight: bold;
 }
@@ -159,7 +159,7 @@ p {
     background: #E9A23B;
 }
 
-.gt-strd .table-cell a .l_st_row{
+.gt-strd .table-cell a .l_st_row {
     color: #fff;
 }
 
@@ -168,50 +168,36 @@ p {
     color: #fff;
 }
 
-.btn {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.5rem 1.5rem;
-    color: #3662E3;
-    background-color: #eaeaea;
-    border: none;
-    border-radius: 4px;
-    text-decoration: none;
-    transition: background 0.3s;
-}
-
-.btn:hover {
-    background-color: #ddd;
-}
-
-.btn.primary:hover {
-    background-color: #ff9900;
-}
-
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1024px) {
     .table-cell {
         padding: 0.5rem;
     }
+
+    .c_free {
+        display: none;
+    }
 }
 
-@media screen and (max-width: 576px) {
-    .table {
-        display: block;
+@media screen and (max-width: 640px) {
+
+    .c_free {
+        display: none;
     }
 
-    .table-row {
-        display: block;
-        margin-bottom: 1rem;
+    .c_team {
+        display: none;
     }
 
-    .table-cell {
-        display: block;
-        text-align: left;
-        padding: 0.5rem;
+    .head-price {
+        font-size: 3rem;
     }
 
-    .table-cell a.btn {
-        display: block;
-        width: 100%;
+    .pricing-table {
+        padding: 4rem .5rem;
+        overflow: hidden;
     }
+    .head-title {
+        height: 20px;
+    }
+
 }
