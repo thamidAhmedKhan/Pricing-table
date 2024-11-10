@@ -69,6 +69,7 @@ p {
     border: 0px;
     text-align: center;
     vertical-align: middle;
+    min-width: 100px;
 }
 
 .border-row .table-cell:not(.popular) {
@@ -168,6 +169,12 @@ p {
     color: #fff;
 }
 
+.head-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 @media screen and (max-width: 1024px) {
     .table-cell {
         padding: 0.5rem;
@@ -176,14 +183,17 @@ p {
     .c_free {
         display: none;
     }
+
+    .head-title {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 }
 
 @media screen and (max-width: 640px) {
 
-    .c_free {
-        display: none;
-    }
-
+    .c_free,
     .c_team {
         display: none;
     }
@@ -196,8 +206,28 @@ p {
         padding: 4rem .5rem;
         overflow: hidden;
     }
+
     .head-title {
-        height: 20px;
+        display: block;
+        width: 100px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .head-title {
+        position: relative;
+        left: 0;
+    }
+
+    .popular {
+        position: relative;
+        transform: translateX(100%);
+    }
+
+    .c_enterprise {
+        position: relative;
+        transform: translateX(-100%);
     }
 
 }
